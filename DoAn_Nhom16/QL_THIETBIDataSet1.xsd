@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QL_THIETBIDataSet1" targetNamespace="http://tempuri.org/QL_THIETBIDataSet1.xsd" xmlns:mstns="http://tempuri.org/QL_THIETBIDataSet1.xsd" xmlns="http://tempuri.org/QL_THIETBIDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QL_THIETBIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QL_THIETBIConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DoAn_Nhom16.Properties.Settings.GlobalReference.Default.QL_THIETBIConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DONHANGVIEWTableAdapter" GeneratorDataComponentClassName="DONHANGVIEWTableAdapter" Name="DONHANGVIEW" UserDataComponentName="DONHANGVIEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QL_THIETBIConnectionString (Settings)" DbObjectName="QL_THIETBI.dbo.DONHANGVIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MADH, TENKH, TENNV, NGAYLAP, TONGTIEN, HINHTHUCTT, TINHTRANG, GHICHU FROM dbo.DONHANGVIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MADH" DataSetColumn="MADH" />
+              <Mapping SourceColumn="TENKH" DataSetColumn="TENKH" />
+              <Mapping SourceColumn="TENNV" DataSetColumn="TENNV" />
+              <Mapping SourceColumn="NGAYLAP" DataSetColumn="NGAYLAP" />
+              <Mapping SourceColumn="TONGTIEN" DataSetColumn="TONGTIEN" />
+              <Mapping SourceColumn="HINHTHUCTT" DataSetColumn="HINHTHUCTT" />
+              <Mapping SourceColumn="TINHTRANG" DataSetColumn="TINHTRANG" />
+              <Mapping SourceColumn="GHICHU" DataSetColumn="GHICHU" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DONNHAPVIEWTableAdapter" GeneratorDataComponentClassName="DONNHAPVIEWTableAdapter" Name="DONNHAPVIEW" UserDataComponentName="DONNHAPVIEWTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QL_THIETBIConnectionString (Settings)" DbObjectName="QL_THIETBI.dbo.DONNHAPVIEW" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MADN, TENNCC, TENNV, NGAYLAP, TONGTIEN, GHICHU FROM dbo.DONNHAPVIEW</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MADN" DataSetColumn="MADN" />
+              <Mapping SourceColumn="TENNCC" DataSetColumn="TENNCC" />
+              <Mapping SourceColumn="TENNV" DataSetColumn="TENNV" />
+              <Mapping SourceColumn="NGAYLAP" DataSetColumn="NGAYLAP" />
+              <Mapping SourceColumn="TONGTIEN" DataSetColumn="TONGTIEN" />
+              <Mapping SourceColumn="GHICHU" DataSetColumn="GHICHU" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SANPHAMTableAdapter" GeneratorDataComponentClassName="SANPHAMTableAdapter" Name="SANPHAM" UserDataComponentName="SANPHAMTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QL_THIETBIConnectionString (Settings)" DbObjectName="QL_THIETBI.dbo.SANPHAM" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MATB, TENTB, GIA, SOLUONG, MOTA, TENLOAI, TENNCC, TINHTRANG FROM dbo.SANPHAM</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MATB" DataSetColumn="MATB" />
+              <Mapping SourceColumn="TENTB" DataSetColumn="TENTB" />
+              <Mapping SourceColumn="GIA" DataSetColumn="GIA" />
+              <Mapping SourceColumn="SOLUONG" DataSetColumn="SOLUONG" />
+              <Mapping SourceColumn="MOTA" DataSetColumn="MOTA" />
+              <Mapping SourceColumn="TENLOAI" DataSetColumn="TENLOAI" />
+              <Mapping SourceColumn="TENNCC" DataSetColumn="TENNCC" />
+              <Mapping SourceColumn="TINHTRANG" DataSetColumn="TINHTRANG" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QL_THIETBIDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QL_THIETBIDataSet1" msprop:Generator_UserDSName="QL_THIETBIDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DONHANGVIEW" msprop:Generator_TableClassName="DONHANGVIEWDataTable" msprop:Generator_TableVarName="tableDONHANGVIEW" msprop:Generator_TablePropName="DONHANGVIEW" msprop:Generator_RowDeletingName="DONHANGVIEWRowDeleting" msprop:Generator_RowChangingName="DONHANGVIEWRowChanging" msprop:Generator_RowEvHandlerName="DONHANGVIEWRowChangeEventHandler" msprop:Generator_RowDeletedName="DONHANGVIEWRowDeleted" msprop:Generator_UserTableName="DONHANGVIEW" msprop:Generator_RowChangedName="DONHANGVIEWRowChanged" msprop:Generator_RowEvArgName="DONHANGVIEWRowChangeEvent" msprop:Generator_RowClassName="DONHANGVIEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MADH" msprop:Generator_ColumnVarNameInTable="columnMADH" msprop:Generator_ColumnPropNameInRow="MADH" msprop:Generator_ColumnPropNameInTable="MADHColumn" msprop:Generator_UserColumnName="MADH" type="xs:int" />
+              <xs:element name="TENKH" msprop:Generator_ColumnVarNameInTable="columnTENKH" msprop:Generator_ColumnPropNameInRow="TENKH" msprop:Generator_ColumnPropNameInTable="TENKHColumn" msprop:Generator_UserColumnName="TENKH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENNV" msprop:Generator_ColumnVarNameInTable="columnTENNV" msprop:Generator_ColumnPropNameInRow="TENNV" msprop:Generator_ColumnPropNameInTable="TENNVColumn" msprop:Generator_UserColumnName="TENNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYLAP" msprop:Generator_ColumnVarNameInTable="columnNGAYLAP" msprop:Generator_ColumnPropNameInRow="NGAYLAP" msprop:Generator_ColumnPropNameInTable="NGAYLAPColumn" msprop:Generator_UserColumnName="NGAYLAP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TONGTIEN" msprop:Generator_ColumnVarNameInTable="columnTONGTIEN" msprop:Generator_ColumnPropNameInRow="TONGTIEN" msprop:Generator_ColumnPropNameInTable="TONGTIENColumn" msprop:Generator_UserColumnName="TONGTIEN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="HINHTHUCTT" msprop:Generator_ColumnVarNameInTable="columnHINHTHUCTT" msprop:Generator_ColumnPropNameInRow="HINHTHUCTT" msprop:Generator_ColumnPropNameInTable="HINHTHUCTTColumn" msprop:Generator_UserColumnName="HINHTHUCTT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TINHTRANG" msprop:Generator_ColumnVarNameInTable="columnTINHTRANG" msprop:Generator_ColumnPropNameInRow="TINHTRANG" msprop:Generator_ColumnPropNameInTable="TINHTRANGColumn" msprop:Generator_UserColumnName="TINHTRANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GHICHU" msprop:Generator_ColumnVarNameInTable="columnGHICHU" msprop:Generator_ColumnPropNameInRow="GHICHU" msprop:Generator_ColumnPropNameInTable="GHICHUColumn" msprop:Generator_UserColumnName="GHICHU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DONNHAPVIEW" msprop:Generator_TableClassName="DONNHAPVIEWDataTable" msprop:Generator_TableVarName="tableDONNHAPVIEW" msprop:Generator_TablePropName="DONNHAPVIEW" msprop:Generator_RowDeletingName="DONNHAPVIEWRowDeleting" msprop:Generator_RowChangingName="DONNHAPVIEWRowChanging" msprop:Generator_RowEvHandlerName="DONNHAPVIEWRowChangeEventHandler" msprop:Generator_RowDeletedName="DONNHAPVIEWRowDeleted" msprop:Generator_UserTableName="DONNHAPVIEW" msprop:Generator_RowChangedName="DONNHAPVIEWRowChanged" msprop:Generator_RowEvArgName="DONNHAPVIEWRowChangeEvent" msprop:Generator_RowClassName="DONNHAPVIEWRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MADN" msprop:Generator_ColumnVarNameInTable="columnMADN" msprop:Generator_ColumnPropNameInRow="MADN" msprop:Generator_ColumnPropNameInTable="MADNColumn" msprop:Generator_UserColumnName="MADN" type="xs:int" />
+              <xs:element name="TENNCC" msprop:Generator_ColumnVarNameInTable="columnTENNCC" msprop:Generator_ColumnPropNameInRow="TENNCC" msprop:Generator_ColumnPropNameInTable="TENNCCColumn" msprop:Generator_UserColumnName="TENNCC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENNV" msprop:Generator_ColumnVarNameInTable="columnTENNV" msprop:Generator_ColumnPropNameInRow="TENNV" msprop:Generator_ColumnPropNameInTable="TENNVColumn" msprop:Generator_UserColumnName="TENNV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NGAYLAP" msprop:Generator_ColumnVarNameInTable="columnNGAYLAP" msprop:Generator_ColumnPropNameInRow="NGAYLAP" msprop:Generator_ColumnPropNameInTable="NGAYLAPColumn" msprop:Generator_UserColumnName="NGAYLAP" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TONGTIEN" msprop:Generator_ColumnVarNameInTable="columnTONGTIEN" msprop:Generator_ColumnPropNameInRow="TONGTIEN" msprop:Generator_ColumnPropNameInTable="TONGTIENColumn" msprop:Generator_UserColumnName="TONGTIEN" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GHICHU" msprop:Generator_ColumnVarNameInTable="columnGHICHU" msprop:Generator_ColumnPropNameInRow="GHICHU" msprop:Generator_ColumnPropNameInTable="GHICHUColumn" msprop:Generator_UserColumnName="GHICHU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SANPHAM" msprop:Generator_TableClassName="SANPHAMDataTable" msprop:Generator_TableVarName="tableSANPHAM" msprop:Generator_TablePropName="SANPHAM" msprop:Generator_RowDeletingName="SANPHAMRowDeleting" msprop:Generator_RowChangingName="SANPHAMRowChanging" msprop:Generator_RowEvHandlerName="SANPHAMRowChangeEventHandler" msprop:Generator_RowDeletedName="SANPHAMRowDeleted" msprop:Generator_UserTableName="SANPHAM" msprop:Generator_RowChangedName="SANPHAMRowChanged" msprop:Generator_RowEvArgName="SANPHAMRowChangeEvent" msprop:Generator_RowClassName="SANPHAMRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MATB" msprop:Generator_ColumnVarNameInTable="columnMATB" msprop:Generator_ColumnPropNameInRow="MATB" msprop:Generator_ColumnPropNameInTable="MATBColumn" msprop:Generator_UserColumnName="MATB" type="xs:int" />
+              <xs:element name="TENTB" msprop:Generator_ColumnVarNameInTable="columnTENTB" msprop:Generator_ColumnPropNameInRow="TENTB" msprop:Generator_ColumnPropNameInTable="TENTBColumn" msprop:Generator_UserColumnName="TENTB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GIA" msprop:Generator_ColumnVarNameInTable="columnGIA" msprop:Generator_ColumnPropNameInRow="GIA" msprop:Generator_ColumnPropNameInTable="GIAColumn" msprop:Generator_UserColumnName="GIA" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SOLUONG" msprop:Generator_ColumnVarNameInTable="columnSOLUONG" msprop:Generator_ColumnPropNameInRow="SOLUONG" msprop:Generator_ColumnPropNameInTable="SOLUONGColumn" msprop:Generator_UserColumnName="SOLUONG" type="xs:int" minOccurs="0" />
+              <xs:element name="MOTA" msprop:Generator_ColumnVarNameInTable="columnMOTA" msprop:Generator_ColumnPropNameInRow="MOTA" msprop:Generator_ColumnPropNameInTable="MOTAColumn" msprop:Generator_UserColumnName="MOTA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENLOAI" msprop:Generator_ColumnVarNameInTable="columnTENLOAI" msprop:Generator_ColumnPropNameInRow="TENLOAI" msprop:Generator_ColumnPropNameInTable="TENLOAIColumn" msprop:Generator_UserColumnName="TENLOAI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TENNCC" msprop:Generator_ColumnVarNameInTable="columnTENNCC" msprop:Generator_ColumnPropNameInRow="TENNCC" msprop:Generator_ColumnPropNameInTable="TENNCCColumn" msprop:Generator_UserColumnName="TENNCC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TINHTRANG" msprop:Generator_ColumnVarNameInTable="columnTINHTRANG" msprop:Generator_ColumnPropNameInRow="TINHTRANG" msprop:Generator_ColumnPropNameInTable="TINHTRANGColumn" msprop:Generator_UserColumnName="TINHTRANG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="130" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DONHANGVIEW" />
+      <xs:field xpath="mstns:MADH" />
+    </xs:unique>
+    <xs:unique name="DONNHAPVIEW_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DONNHAPVIEW" />
+      <xs:field xpath="mstns:MADN" />
+    </xs:unique>
+    <xs:unique name="SANPHAM_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SANPHAM" />
+      <xs:field xpath="mstns:MATB" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

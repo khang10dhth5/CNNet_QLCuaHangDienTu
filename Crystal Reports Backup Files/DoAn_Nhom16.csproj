@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5006EAAD-7127-4849-ADE5-4E2A152AC42D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAn_Nhom16</RootNamespace>
+    <AssemblyName>DoAn_Nhom16</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Config_Setting.cs" />
+    <Compile Include="App_Tools.cs" />
+    <Compile Include="FormBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBaoCao.Designer.cs">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DangKy.Designer.cs">
+      <DependentUpon>frm_DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DangNhap.Designer.cs">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DoiMatKhau.Designer.cs">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QL_NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QL_NhaCungCap.Designer.cs">
+      <DependentUpon>frm_QL_NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SanPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SanPham.Designer.cs">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SanPhamTieuBieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SanPhamTieuBieu.Designer.cs">
+      <DependentUpon>frm_SanPhamTieuBieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SaoLuuVaKhoiPhuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SaoLuuVaKhoiPhuc.Designer.cs">
+      <DependentUpon>frm_SaoLuuVaKhoiPhuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QLBHDienTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLBHDienTu.Designer.cs">
+      <DependentUpon>QLBHDienTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_THIETBIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QL_THIETBIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SanPhamReports.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanPhamReports.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SanPham_report.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SanPham_report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SessionLogin.cs" />
+    <Compile Include="UC_Button.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Button.Designer.cs">
+      <DependentUpon>UC_Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ComboBox.Designer.cs">
+      <DependentUpon>UC_ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ComboBox_Simple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ComboBox_Simple.Designer.cs">
+      <DependentUpon>UC_ComboBox_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Date.Designer.cs">
+      <DependentUpon>UC_Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Date_Simple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Date_Simple.Designer.cs">
+      <DependentUpon>UC_Date_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_TextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_TextBox.Designer.cs">
+      <DependentUpon>UC_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Textbox_Simple.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Textbox_Simple.Designer.cs">
+      <DependentUpon>UC_Textbox_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuLyDB.cs" />
+    <EmbeddedResource Include="FormBaoCao.resx">
+      <DependentUpon>FormBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DangKy.resx">
+      <DependentUpon>frm_DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DangNhap.resx">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DoiMatKhau.resx">
+      <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QL_NhaCungCap.resx">
+      <DependentUpon>frm_QL_NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SanPham.resx">
+      <DependentUpon>frm_SanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SanPhamTieuBieu.resx">
+      <DependentUpon>frm_SanPhamTieuBieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SaoLuuVaKhoiPhuc.resx">
+      <DependentUpon>frm_SaoLuuVaKhoiPhuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLBHDienTu.resx">
+      <DependentUpon>QLBHDienTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPhamReports.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SanPhamReports.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanPham_report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SanPham_report.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Button.resx">
+      <DependentUpon>UC_Button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ComboBox.resx">
+      <DependentUpon>UC_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ComboBox_Simple.resx">
+      <DependentUpon>UC_ComboBox_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Date.resx">
+      <DependentUpon>UC_Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Date_Simple.resx">
+      <DependentUpon>UC_Date_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_TextBox.resx">
+      <DependentUpon>UC_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Textbox_Simple.resx">
+      <DependentUpon>UC_Textbox_Simple.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Images16\Thumbs.db" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QL_THIETBIDataSet.xsc">
+      <DependentUpon>QL_THIETBIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QL_THIETBIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QL_THIETBIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QL_THIETBIDataSet.xss">
+      <DependentUpon>QL_THIETBIDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HinhAnhSP\hinh1.jpg" />
+    <Content Include="HinhAnhSP\hinh2.jpg" />
+    <Content Include="HinhAnhSP\hinh3.jpg" />
+    <Content Include="HinhAnhSP\hinh4.jpg" />
+    <Content Include="Images16\Add.png" />
+    <Content Include="Images16\Back.png" />
+    <Content Include="Images16\Bar Chart.png" />
+    <Content Include="Images16\Calendar-icon.png" />
+    <Content Include="Images16\Close-2-icon.png" />
+    <Content Include="Images16\Comment.png" />
+    <Content Include="Images16\dangnhap %281%29.jpg" />
+    <Content Include="Images16\Database-Backup-icon.png" />
+    <Content Include="Images16\database-icon.png" />
+    <Content Include="Images16\Delete.png" />
+    <Content Include="Images16\dienthoai %281%29.png" />
+    <Content Include="Images16\dienthoai.jpg" />
+    <Content Include="Images16\Email.png" />
+    <Content Include="Images16\Exit.png" />
+    <Content Include="Images16\Finance-Purchase-Order-icon.png" />
+    <Content Include="Images16\HK.png" />
+    <Content Include="Images16\HK2.png" />
+    <Content Include="Images16\Info.png" />
+    <Content Include="Images16\laptop %281%29.png" />
+    <Content Include="Images16\Line Chart.png" />
+    <Content Include="Images16\Load.png" />
+    <Content Include="Images16\Loading.png" />
+    <Content Include="Images16\modify-key.png" />
+    <Content Include="Images16\Modify.png" />
+    <Content Include="Images16\moon-full-moon-icon.png" />
+    <Content Include="Images16\Moon-icon.png" />
+    <Content Include="Images16\moon-new-moon-icon.png" />
+    <Content Include="Images16\name-card-icon.png" />
+    <Content Include="Images16\Next.png" />
+    <Content Include="Images16\Picture.png" />
+    <Content Include="Images16\Pie Chart.png" />
+    <Content Include="Images16\Print-icon.png" />
+    <Content Include="Images16\Print.png" />
+    <Content Include="Images16\Profile.png" />
+    <Content Include="Images16\Save.png" />
+    <Content Include="Images16\Search.png" />
+    <Content Include="Images16\Server.jpg" />
+    <Content Include="Images16\Sex-Male-Female-icon.png" />
+    <Content Include="Images16\sort-ascending-icon.png" />
+    <Content Include="Images16\sort-descending-icon.png" />
+    <Content Include="Images16\Start-Menu-Search-icon.png" />
+    <Content Include="Images16\system-database-add-icon.png" />
+    <Content Include="Images16\System-Security-Reader-2-icon.png" />
+    <Content Include="Images16\tainghe.jpg" />
+    <Content Include="Images16\tainghepng %281%29.png" />
+    <Content Include="Images16\User-Group-icon.png" />
+    <Content Include="Images16\Warning.png" />
+    <Content Include="Images16\NCC.png" />
+    <Content Include="Images16\Window-Enter-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
